@@ -1,0 +1,7 @@
+﻿---
+- hosts: all
+  tasks:
+    - name: Installer Apache
+      ansible.builtin.apt:
+        name: apache2
+        state: present

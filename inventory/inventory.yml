@@ -1,0 +1,16 @@
+all:
+  children:
+    serveurs_web:
+      hosts:
+        web1.example.com:
+          ansible_user: admin
+        web2.example.com:
+          ansible_user: admin
+      vars:
+        nginx_version: "1.18.0"
+    base_de_donnees:
+      hosts:
+        db1.example.com:
+          ansible_user: dbadmin
+        db2.example.com:
+          ansible_user: dbadmin
